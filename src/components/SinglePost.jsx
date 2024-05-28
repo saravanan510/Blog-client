@@ -155,7 +155,7 @@ const SinglePost = () => {
                   width: 48,
                   borderRadius: "100px",
                 }}
-                src={`http://localhost:6109/public/images/${post?.author?.profilePicture}`}
+                src={`https://blog-server-karj.onrender.com/public/images/${post?.author?.profilePicture}`}
               />
               <Typography variant="body1">{post?.author.username}</Typography>
               <Typography variant="body1" sx={{ color: "grey" }}>
@@ -182,7 +182,7 @@ const SinglePost = () => {
               marginBottom: "32px",
               borderRadius: "12px",
             }}
-            src={`http://localhost:6109/public/images/${post?.featuredImage}`}
+            src={`https://blog-server-karj.onrender.com/public/images/${post?.featuredImage}`}
           />
 
           <Typography
@@ -287,7 +287,7 @@ const SinglePost = () => {
                           borderRadius: "100px",
                           marginBottom: "24px",
                         }}
-                        src={`http://localhost:6109/public/images/${comment?.author?.profilePicture}`}
+                        src={`https://blog-server-karj.onrender.com/public/images/${comment?.author?.profilePicture}`}
                       />
                       <Box>
                         <Typography variant="body1">

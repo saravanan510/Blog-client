@@ -4,7 +4,7 @@ import Axios from "./axios";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 const useRegister = () => {
-  const { user } = useAuth();
+  const { user, dispatch } = useAuth();
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     username: user?.profile?.username || "",
@@ -101,7 +101,7 @@ const useRegister = () => {
         }
       } catch (err) {
         console.log(err);
-        setServerErrors(err.response.data.errors);
+        setServerErrors(err.response?.data?.errors);
         setClientErrors(null);
       }
     } else {

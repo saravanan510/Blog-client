@@ -60,7 +60,7 @@ const Profile = () => {
                 borderRadius: "50%",
               }}
               alt="The house from the offer."
-              src={`http://localhost:6109/public/images/${user.profile.profilePicture}`}
+              src={`https://blog-server-karj.onrender.com/public/images/${user.profile.profilePicture}`}
             />
             <Box sx={{ display: "flex", gap: "12px" }}>
               <Button

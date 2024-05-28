@@ -42,7 +42,7 @@ const BlogCard = ({ blog }) => {
               width: 32,
               borderRadius: "100px",
             }}
-            src={`http://localhost:6109/public/images/${blog.author.profilePicture}`}
+            src={`https://blog-server-karj.onrender.com/public/images/${blog.author.profilePicture}`}
           />
           <Typography variant="body1">{blog.author.username}</Typography>
           <Typography variant="body1" sx={{ color: "grey" }}>
@@ -116,7 +116,7 @@ const BlogCard = ({ blog }) => {
                 width: "200px",
                 borderRadius: "6px",
               }}
-              src={`http://localhost:6109/public/images/${blog.featuredImage}`}
+              src={`https://blog-server-karj.onrender.com/public/images/${blog.featuredImage}`}
             />
           </Box>
         </Box>
